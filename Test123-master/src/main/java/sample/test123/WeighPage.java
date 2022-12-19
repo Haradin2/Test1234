@@ -25,7 +25,7 @@ public class WeighPage {
 
     @FXML
     void Goback(MouseEvent event) throws IOException {
-     HelloApplication.gotoscreen("hello-view");
+        HelloApplication.gotoscreen("hello-view");
     }
 
 }

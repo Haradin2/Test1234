@@ -27,7 +27,7 @@
          <children>
             <BottomNavigation prefWidth="468.0" GridPane.columnSpan="3" GridPane.rowIndex="3">
                 <actionItems>
-                    <BottomNavigationButton fx:id="BtShop" onMouseClicked="#Gotoshop" prefWidth="166.0" selected="true" text="Shop">
+                    <BottomNavigationButton fx:id="BtShop" onMouseClicked="#Gotoshop" prefWidth="166.0" text="Shop">
                      <graphic>
                         <ImageView fitHeight="36.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                            <image>
