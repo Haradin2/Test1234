@@ -1,14 +1,12 @@
 package sample.test123;
 
 import com.gluonhq.charm.glisten.control.BottomNavigationButton;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-public class HelloController {
+public class UserPageController {
 
     @FXML
     private BottomNavigationButton BtShop;
@@ -20,13 +18,10 @@ public class HelloController {
     private BottomNavigationButton BtUser;
 
     @FXML
-    void GoToWeigh(MouseEvent event) throws IOException {
-        HelloApplication.gotoscreen("WeighPage");
+    void GoToUser(MouseEvent event) throws IOException {
+    HelloApplication.gotoscreen("userpage");
     }
-    @FXML
-    void GoToScan(MouseEvent event) throws IOException {
-       HelloApplication.gotoscreen("ScanPage");
-    }
+
     @FXML
     void GotoHome(MouseEvent event) throws IOException {
         HelloApplication.gotoscreen("hello-view");
@@ -34,10 +29,7 @@ public class HelloController {
 
     @FXML
     void Gotoshop(MouseEvent event) throws IOException {
-        HelloApplication.gotoscreen("List page");
+        HelloApplication.gotoscreen("list page");
     }
 
-    public void GoToUser(MouseEvent mouseEvent) throws IOException {
-        HelloApplication.gotoscreen("userpage");
-    }
 }
