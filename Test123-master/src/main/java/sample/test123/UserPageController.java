@@ -17,6 +17,7 @@ public class UserPageController {
     @FXML
     private BottomNavigationButton BtUser;
 
+
     @FXML
     void GoToUser(MouseEvent event) throws IOException {
     HelloApplication.gotoscreen("userpage");
@@ -30,6 +31,6 @@ public class UserPageController {
     @FXML
     void Gotoshop(MouseEvent event) throws IOException {
         HelloApplication.gotoscreen("list page");
-    }
+      }
 
 }
