@@ -63,7 +63,7 @@
                   </BottomNavigationButton>
                   <BottomNavigationButton fx:id="BtUser" text="User">
                      <graphic>
-                        <ImageView fitHeight="36.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="36.0" fitWidth="39.0" onMouseClicked="#GotoUser" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="file:/C:/Users/seanm/Desktop/%C2%A0/Icons/icons8-user-48.png" />
                            </image>
@@ -72,12 +72,8 @@
                   </BottomNavigationButton>
                </actionItems>
             </BottomNavigation>
-            <ListView fx:id="ListItem01" prefHeight="54.0" prefWidth="467.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
-            <ListView fx:id="ListItem02" prefHeight="54.0" prefWidth="467.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="5" />
-            <Label fx:id="Label02" prefHeight="18.0" prefWidth="179.0" text="Recipe 2" GridPane.rowIndex="4" />
-            <Label fx:id="Label01" text="Recipe 1" GridPane.rowIndex="2" />
-            <Label fx:id="Label03" prefHeight="18.0" prefWidth="179.0" text="Recipe 3" GridPane.rowIndex="6" />
-            <ListView fx:id="ListItem03" prefHeight="54.0" prefWidth="467.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" />
+            <ListView fx:id="ListItem01" maxHeight="450.0" prefHeight="355.0" prefWidth="467.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3" />
+            <Label fx:id="Label01" text="Recepten" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </children>
