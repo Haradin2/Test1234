@@ -43,8 +43,9 @@ public class MyJDBC {
      */
     public static void updateDatabase(String query) throws SQLException {
         // Deze functie is bijna identiek aan de vorige.
+        Connection connection;
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/alimento", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/alimento", "root", "");
 
             Statement statement = connection.createStatement();
 
@@ -53,6 +54,22 @@ public class MyJDBC {
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
+        }
+
+
+        String sqlProduct = "INSERT INTO product (productcode, naam, hoeveelheid, nutri_score, levensduur, gebruiker) VALUES (?, ?, ?, ?, ?, ?)";
+
+        PreparedStatement statement = connection.prepareStatement(sqlProduct);
+        statement.setString(1, "value1");
+        statement.setString(2, "value2");
+        statement.setString(3, "value3");
+        statement.setString(4, "value4");
+        statement.setString(5, "value5");
+        statement.setString(6, "value6");
+
+        int rowsInserted = statement.executeUpdate();
+        if (rowsInserted > 0) {
+            System.out.println("A new product was inserted successfully!");
         }
     }
 }
