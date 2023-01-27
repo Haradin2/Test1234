@@ -17,7 +17,7 @@ public class MyJDBC {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/alimento", "root", "firepad36");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/alimento", "root", "");
 
 
             Statement statement = connection.createStatement();
@@ -44,7 +44,7 @@ public class MyJDBC {
     public static void updateDatabase(String query) throws SQLException {
         // Deze functie is bijna identiek aan de vorige.
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/alimento", "root", "firepad36");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/alimento", "root", "");
 
             Statement statement = connection.createStatement();
 
