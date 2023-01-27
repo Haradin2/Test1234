@@ -6,13 +6,25 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
-public class ScanPage {
+public class ProductManually {
+
+    @FXML
+    private Button BtLiter;
+
+    @FXML
+    private Button BtKilo;
+
+    @FXML
+    private Button BtOunce;
+
+    @FXML
+    private Button BtPounds;
 
     @FXML
     private Button BtBack;
 
     @FXML
-    void GoBack(MouseEvent event) throws IOException {
+    void Goback(MouseEvent event) throws IOException {
         HelloApplication.gotoscreen("hello-view");
     }
     @FXML
