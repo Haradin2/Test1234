@@ -3,7 +3,6 @@ package sample.test123;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-
 public class productManuallyTest {
     @FXML
     private Label weightLabel;

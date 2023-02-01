@@ -2,6 +2,7 @@ package sample.test123;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
@@ -9,16 +10,9 @@ import java.io.IOException;
 public class ProductManually {
 
     @FXML
-    private Button BtLiter;
-
-    @FXML
     private Button BtKilo;
 
-    @FXML
-    private Button BtOunce;
 
-    @FXML
-    private Button BtPounds;
 
     @FXML
     private Button BtBack;
@@ -31,4 +25,5 @@ public class ProductManually {
     void ProductManuallyPage(MouseEvent event) throws IOException {
         HelloApplication.gotoscreen("ProductManuallyPage");
     }
+
 }
